@@ -36,31 +36,18 @@ body{
   background:rgb(190,177,177);
 }
 
-/* WhatsApp */
-.boton-whatsapp{
-  position:absolute;
-  top:76%;
-  left:57%;
-  width:90px;
-  height:90px;
-  transform:translate(-50%,-50%);
-  z-index:999;
-  cursor:pointer;
-  background:red;
-  opacity:.3;
-}
-
-/* Texto ubicación */
+/* Texto información */
 .texto-ubicacion{
   position:absolute;
-  left:57%;
-  top:92%;
-  transform:translateX(-50%);
-  font-size:16px;
+  left:50%;
+  top:80%;
+  transform:translate(-50%,-50%);
+  font-size:18px;
   font-weight:bold;
   color:#0b19d6;
   text-align:center;
   z-index:999;
+  line-height:1.5;
 }
 
 /* Botón música */
@@ -84,20 +71,17 @@ body{
 }
 </style>
 </head>
+
 <body>
 
 <div class="contenedor">
 
   <img src="AYLANII.png" alt="Invitación" class="imagen-principal">
 
-  <a href="https://w.app/5c6hig"
-     target="_blank"
-     class="boton-whatsapp">
-  </a>
-
   <p class="texto-ubicacion">
-    Ubicación<br>
-    por interno
+    Para más información, entre ellas la ubicación,<br>
+    escriba al número:<br>
+    <strong>+593 99 151 9471</strong>
   </p>
 
 </div>
@@ -138,5 +122,6 @@ btnMusica.addEventListener("click", () => {
   }
 });
 </script>
+
 </body>
 </html>
