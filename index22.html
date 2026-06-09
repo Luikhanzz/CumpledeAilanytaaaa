@@ -2,9 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-  content="width=device-width,
-  initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Invitación Alany</title>
 
 <style>
@@ -16,7 +14,7 @@
 
 body{
   width:100vw;
-  height:100dvh;
+  min-height:100vh;
   overflow:hidden;
   background:black;
   display:flex;
@@ -28,15 +26,12 @@ body{
 .contenedor{
   position:relative;
   width:100vw;
-  height:100dvh;
+  height:100vh;
 }
-.boton-whatsapp{
-  background:red;
-  opacity:.3;
-}
+
 .imagen-principal{
   width:100vw;
-  height:100dvh;
+  height:100vh;
   object-fit:contain;
   background:rgb(190,177,177);
 }
@@ -44,35 +39,35 @@ body{
 /* WhatsApp */
 .boton-whatsapp{
   position:absolute;
-  bottom:23%;
-  left:51%;
-  top:81%;
+  top:76%;
+  left:57%;
   width:90px;
   height:90px;
   transform:translate(-50%,-50%);
   z-index:999;
   cursor:pointer;
+  background:red;
+  opacity:.3;
 }
 
-/* Texto debajo del WhatsApp */
+/* Texto ubicación */
 .texto-ubicacion{
   position:absolute;
   left:57%;
-  top:90%;
+  top:92%;
   transform:translateX(-50%);
   font-size:16px;
   font-weight:bold;
   color:#0b19d6;
   text-align:center;
-
   z-index:999;
 }
 
 /* Botón música */
 .boton-musica{
   position:fixed;
-  bottom:20px;
-  right:20px;
+  bottom:80px;
+  right:15px;
   background:#ff69b4;
   color:white;
   border:none;
@@ -134,7 +129,6 @@ setInterval(() => {
 }, 1000);
 
 btnMusica.addEventListener("click", () => {
-
   if (music.paused) {
     music.play();
     btnMusica.textContent = "🔊 Música";
@@ -142,7 +136,6 @@ btnMusica.addEventListener("click", () => {
     music.pause();
     btnMusica.textContent = "🎵 Música";
   }
-
 });
 </script>
 
